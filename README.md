@@ -1,17 +1,17 @@
 # Spark Submitter Console
 
-Spark Submitter Console is a web console through which you can upload 
-jar, submit it to Yarn cluster  
+Spark Submitter Console is a tinny but useful web console in which you can 
+
+1. Uploading jar
+2. Submitting jar to Yarn cluster
+3. Monitoring/Manager your applications:  
 
 ![](http://docs.mlsql.tech/upload_images/mm/WX20190708-185353@2x.png)
 
-or monitor your application:
-
 ![](http://docs.mlsql.tech/upload_images/mm/WX20190708-190010@2x.png)
 
-Tinny but useful.
 
-## How to start it
+## How to setup
 
 1. Clone and package:
 
@@ -36,10 +36,11 @@ java -jar .:[your jar path] tech.mlsql.spark.submitter.SparkSubmitterConsoleApp 
   -jdbcPath /tmp/jdbc.properties 
 ```
 
-## Limitation
+## Limitation for 0.1.0
 
-1. For now only support Yarn Cluster
+1. Only support Yarn Cluster
 2. No Auth available. We recommend you to placed it behind Nginx which can provide the auth.
+3. No high availability design
 
 
 
