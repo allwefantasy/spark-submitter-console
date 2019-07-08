@@ -16,7 +16,7 @@ Spark Submitter Console is a tinny but useful web console in which you can
 1. Clone and package:
 
     ```
-    mvn clean package -Pshade
+    mvn clean package -DskipTests -Pshade
     ```
 
 2. find the spark_jobs_2017-08-20.sql in resources directory and import to MySQL.
