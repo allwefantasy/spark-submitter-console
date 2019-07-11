@@ -31,7 +31,7 @@ Spark Submitter Console is a tinny but useful web console in which you can
 4. Find the jar and start it:
 
 ```shell
-java -jar .:[your jar path] tech.mlsql.spark.submitter.SparkSubmitterConsoleApp \
+java -cp .:[your jar path] tech.mlsql.spark.submitter.SparkSubmitterConsoleApp \
   -yarnUrl http://127.0.0.1 \
   -jdbcPath /tmp/jdbc.properties 
 ```
